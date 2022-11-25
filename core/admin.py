@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.utils.translation import gettext_lazy as _
+
 # from faker import Faker
 
 from core.models import Autor, Categoria, Editora, Livro, Usuario
@@ -12,7 +13,7 @@ class AutorAdmin(admin.ModelAdmin):
     search_fields = ("nome", "email")
     list_filter = ("nome",)
     ordering = ("nome", "email")
-    actions = ['gerar_autores']
+    actions = ["gerar_autores"]
 
     # def gerar_autores(self, request, queryset):
     #     faker = Faker()
@@ -23,6 +24,7 @@ class AutorAdmin(admin.ModelAdmin):
     #         )
     #     self.message_user(request, 'Autores gerados com sucesso!')
     # gerar_autores.short_description = 'Gerar autores'
+
 
 @admin.register(Categoria)
 class CategoriaAdmin(admin.ModelAdmin):

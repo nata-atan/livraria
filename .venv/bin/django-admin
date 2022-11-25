@@ -1,4 +1,4 @@
-#!/home/aluno/Documentos/nata/livraria/.venv/bin/python
+#!/home/ricardoandre/Desktop/livraria/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
